@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   resources :orders, only: [:show]
 
   post 'carts/:id/checkout', to: 'carts#checkout', as: 'checkout'
+  post '/line_items/:item_id', to: 'carts#update'
 
 end

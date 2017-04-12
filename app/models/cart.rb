@@ -12,6 +12,10 @@ class Cart < ActiveRecord::Base
     total
   end
 
+  def money_total
+    total.to_f/100
+  end
+
   def add_item(item_id)
     if existing = line_items.find_by(item_id: item_id)
       existing.quantity += 1

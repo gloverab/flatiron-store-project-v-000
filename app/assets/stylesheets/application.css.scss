@@ -19,9 +19,40 @@
  */
 @import "bootstrap";
 /* Some Style from the Bootstrap Default Theme */
+
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  background-color: #B8D3D1;
+}
+
+nav {
+  margin: 0 auto;
+  height: 70px;
+  background-color: #C0E8F9;
+}
+
+nav ul {
+  // display: inline;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: #1A281F;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+  margin-right: 5%;
 }
 
 .theme-dropdown .dropdown-menu {
